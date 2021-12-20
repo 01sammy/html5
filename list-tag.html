@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록을 만드는 태그</title>
+    <style>
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        ul li {
+            float: left;
+        }
+        ul + p {
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <p>텍스트를 간단하게 정리할 때 사용하거나 메뉴나 본문등에서 자주 사용하는 태그</p>
+    <h2>목록 태그 종류</h2>
+    <p>첫번째, 순서가 있는 목록 태그(ol)</p>
+    <p>두번째, 순서가 없는 목록 태그(ul)</p>
+    <p>세번째, 설명 목록 태그(dl)</p>
+    <hr>
+    <!-- p. 66 순서 없는 목록 예시-->
+    <h2>좋아하는 것</h2>
+    <ul type="square">
+        <li>일반전화</li>
+        <li>휴대전화</li>
+    </ul>
+    <h2>국내 아이돌 순위</h2>
+    <ol type="A">
+        <li>1등아이돌</li>
+        <li>2등아이돌</li>
+    </ol>
+    <ul>
+        <li>
+            <a href="#">
+                <img src="images/menu_01.png" alt+"메일">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="images/menu_02.png" alt+"카페">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="images/menu_03.png" alt+"블로그">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="images/menu_04.png" alt+"지식인">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="images/menu_05.png" alt+"쇼팡">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="images/menu_06.png" alt+"메일">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="images/menu_07.png" alt+"메일">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="images/menu_08.png" alt+"메일">
+            </a>
+        </li>
+        <!-- emmet(이멧)문법을 사용하는 예시-->
+        <!-- ul>li*8>a[href=#]-->
+    </ul>
+    <ul><li><a href="#"><img src="images/menu_01.png" alt="ㅇ"></a></li>
+    <li><a href="#"><img src="images/menu_02.png" alt="ㅇ"></a></li>
+    <li><a href="#"><img src="images/menu_03.png" alt="ㅇ"></a></li>
+    <li><a href="#"><img src="images/menu_04.png" alt="ㅇ"></a></li>
+    <li><a href="#"><img src="images/menu_05.png" alt="ㅇ"></a></li>
+    <li><a href="#"><img src="images/menu_06.png" alt="ㅇ"></a></li>
+    <li><a href="#"><img src="images/menu_07.png" alt="ㅇ"></a></li>
+    <li><a href="#"><img src="images/menu_08.png" alt="ㅇ"></a></li></ul>
+    <p><a href="#">더보기&gt;</a></p>
+    <h3>라면 끓이는 순서</h3>
+    <ol>
+        <li>냄비에 물을 500ml를 준비한다.</li>
+        <li>물이 끓기 시작하면,준비한 라면을 개봉하고 스프를 넣는다</li>
+        <li>1분 뒤 면을 넣는다</li>
+        <li>3분간 중불로 바꾸어 더 끓인다.</li>
+    </ol>
+    <hr>
+    <h3>제목과 설명이 한 쌍인 목록</h3>
+    <!-- p.69 예시-->
+    <dl>
+        <dt>올레 1코스</dt>
+        <dd>코스 : 시흥 초등학교 옆에서 광치기 해변까지</dd>
+        <dd>거리 : 14.6km(4~5시간)</dd>
+        <dd>난이도 : 중</dd>
+        <dt>올레 2코스</dt>
+        <dd>코스 : 광치기 해변~온평 포구까지</dd>
+        <dd>거리 : 14.6km(4~5시간)</dd>
+        <dd>난이도 : 중</dd>
+
+    </dl>
+</body>
+</html>
