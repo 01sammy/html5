@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 양식</title>
+    <style>
+        table, th, td{
+                border: 1px solid #191919;
+        }
+        th, td {
+            padding: 10px 15px;
+        }
+        td:nth-of-type(2n) {
+            width: 25;
+        }
+        table {
+            border-collapse: collapse;
+            width: 1000px;
+            margin: 0 auto;
+        }
+        caption { /* 표의 제목을 표현하는 태그*/
+            caption-side: bottom; /*표 제목의 위치 : 표의 아랫쪽 caption side position*/
+        }
+        .w1 {
+            width: 10%
+        }
+        .w2{
+            width: 75%
+        }
+    </style>
+</head>
+<body>
+    <h1>테이블을 이용한 표 예제</h1>
+    <table>
+        <caption>입학 지원서</caption>
+        <tr>
+            <td class="w1">이름</td> <td>&nbsp;</td> <td class="w1">연락처 </td><td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>주소</td><td colspan="3">&nbsp;</td>
+        </tr>
+        <tr>
+            <td>자기소개</td><td colspan="3">&nbsp;</td>
+        </tr>
+    </table>
+</body>
+</html>

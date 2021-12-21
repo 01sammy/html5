@@ -1,0 +1,90 @@
+/* reset.css*/
+html {
+    height: 100%;
+}
+body {
+    background: #434343;
+    height: 100%
+}
+.wrap {
+    width: 1190px;
+    height: 150%;
+    margin: 0 auto;
+}
+.col_left {
+    width: 30%;
+    height: 100%;
+    padding: 0 5%;
+    box-sizing: border-box;
+    background:#c4c4c4;
+    float: left;
+}
+.col_left img {
+    max-width: 100%;
+    margin: 5% 0;
+}
+.col_right {
+    height: 100%;
+    padding: 0 5%;
+    box-sizing: border-box;
+    width: 70%;
+    background: #fff;
+    float: right;
+    
+}
+
+h2 {
+    margin: 15px 0 10px;
+    font-weight: bolder;
+    text-transform:uppercase;/*텍스트 변형: 대문자*/
+}
+h2::first-letter {
+    font-size: 2rem;
+}
+p {
+    line-height: 1.9; /*행간 : 기본값 1.9배*/
+}
+ul {
+    list-style: disc inside;
+}
+ul ul {
+    list-style: circle inside;
+    margin: 0 0 0 2rem;
+}
+
+li {
+    margin: 15px
+}
+
+table {
+    width: 100%;
+    margin: 0 0 0 0;
+}
+
+table, th, td {
+    border: 1px solid #191919;
+}
+th,td {
+    padding: 15px 10px;
+    text-align: center;
+}
+caption {
+    margin: 10px;
+}
+table tr:nth-child(1) th {
+    background: #c4c4c4;
+}
+
+@media screen and (max-width: 480px) {
+    .wrap {
+        width: 100%;
+    }
+    .col_left {
+        width: 100%;
+        float: none;
+    }
+    .col_right {
+        width: 100%;
+        float: none;
+    }
+}
